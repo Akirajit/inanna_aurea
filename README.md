@@ -1,1 +1,1 @@
-# inanna_aurea
+Proyecto final para CoderHouse
