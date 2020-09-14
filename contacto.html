@@ -1,0 +1,119 @@
+<!-- Formulario de contacto -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inanna Aurea</title>
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Orbitron:wght@400;700&family=Red+Rose:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <h1 class="logo"><a href="index.html">INANNA_AUREA</a></h1>
+        <p class="subtitulo">Galería de arte online, una experiencia 2020 🧙</p>
+      </div>
+      <div class="header-right">
+        <nav>
+          <ul>
+            <li>
+              <a href="acerca_de_mi.html">Acerca de mí</a>
+            </li>
+            <li>
+              <a href="portal1.html">Portal Lunar</a>
+            </li>
+            <li>
+              <a href="portal2.html">Portal Epsylon</a>
+            </li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- FORM -->
+    <section class="contact">
+      <div class="contact-container wow animate__animated animate__bounceIn">
+        <form action="#" method="GET" class="contact-container-form">
+          <h2 class="titulos">Contacto</h2>
+          <div>
+            <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre" autocomplete="off" />
+          </div>
+    
+          <div>
+            <input type="text" name="apellido" id="apellido" class="input" placeholder="Apellido" autocomplete="off"/>
+          </div>
+  
+          <div>
+            <input type="email" name="email" id="email" class="input"  placeholder="Email" autocomplete="off"/>
+          </div>
+    
+          <div>
+            <label>Cómo llegaste a este sitio?</label>
+            <select name="pregunta" id="pregunta">
+              <option value="recomendacion_amigo">Me lo recomendó un amigo</option>
+              <option value="coder_house">A través de CoderHouse</option>
+              <option value="encontrado">Simplemente encontré el sitio</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+    
+          <div>
+            <label for="suscribirme">Quiero suscribirme al newsletter</label>
+            <input type="checkbox" name="suscribirme" id="suscribirme" checked />
+          </div>
+    
+          <div>
+            
+            <textarea
+              name="comentarios"
+              id="comentarios"
+              cols="60"
+              rows="10"
+              placeholder="Escribe aquí tu pregunta o comentario"
+            ></textarea>
+          </div>
+    
+          <div  class="contact-buttons">   
+            <input type="reset" value="Resetear formulario" class="button reset" />
+            <input type="submit" value="Enviar" class="button submit" />
+          </div>
+    
+        </form>
+      </div>
+    </section>
+    <!-- /FORM -->
+
+    <footer id="footer-contact">
+      <p class="footer-p">Copyright © 2020 - Todos los derechos reservados</p>
+      <div class="footer-social-icons">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/inanna_aurea/" target="_blank"><img src="img/instagram.svg" alt="Logo Instagram" /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/pg/Inanna_Aurea-1713884342210622/community/?ref=page_internal" target="_blank"><img src="img/facebook.svg" alt="Logo Facebook" /></a>
+          </li>
+          <li>
+            <a href="contacto.html"><img src="img/mail.png" alt="Logo Mail" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+              new WOW().init();
+    </script>
+  </body>
+</html>
