@@ -23,19 +23,6 @@ body {
     font-family: 'Red Rose', cursive;
 }
 
-header {
-    /* background-color:#2c153c; */
-    background-color: #010211;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-     /* border: solid white 1px; */
-}
-
 h1{
     font-size: 2rem;
     font-family: 'Orbitron', sans-serif;
@@ -56,11 +43,22 @@ p {
 }
 
 .header {
+    /* background-color:#2c153c; */
+    background-color: #010211;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
     margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* border: solid white 1px; */
 }
+
+
 .header-left a{
     transition: all 0.4s;
-    
 }
 
 .header-left a:hover {
@@ -137,14 +135,19 @@ p {
     animation-delay: 0s;   
 }
 
+.buttons {
+    margin-bottom: 20px;
+}
+
 .button {
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     font-family: 'Red Rose', cursive;
     font-weight: bold;
     color: #363636;
     background-color: #7BF18B;
-    cursor: pointer;    
+    cursor: pointer;
+    text-align: center;    
 }
 
 
@@ -443,7 +446,7 @@ footer a img:hover {
 /* RESPONSIVE */
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) and (min-width:768){
     .gallery-images.uno ul{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -451,7 +454,7 @@ footer a img:hover {
         grid-template-columns: 1fr 1fr;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px) and (min-width: 480){
     .gallery-images.uno ul{
         grid-template-columns: 1fr 1fr;
     }
@@ -465,7 +468,7 @@ footer a img:hover {
         align-items: center;
     }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 479px){
     .gallery-images.uno ul{
         grid-template-columns: 1fr;
     }
@@ -474,6 +477,44 @@ footer a img:hover {
     footer {
         flex-direction: column;
         align-items: center;
+    }
+    .header {
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 40px;
+        border-bottom: 1px solid white;
+    }
+    .header-left {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+  
+    .header-right li  {
+        display: flex;
+        width: 100%;  
+        }
+
+    .hero h2  {
+        font-size: 35px;
+        text-align: center;
+    }
+    .hero p {
+        text-align: center;
+    }
+    .hero .buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        /* border: 1px solid white; */
+    }
+
+    .hero .buttons .button{
+        display: inline-block;
+        width: 100%;
+        padding: 5px;
+        text-align: center; 
     }
 }
 
