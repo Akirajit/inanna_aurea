@@ -1,0 +1,7 @@
+.button {
+   @extend %btn;
+}
+
+.button:hover {
+   @extend %btn-hover;
+}

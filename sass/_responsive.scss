@@ -1,0 +1,185 @@
+/* RESPONSIVE */
+/* ----------------------------------------------------------------------- */
+/* DESKTOP */
+@media screen and (max-width: 1200px) and (min-width:768px){
+    .gallery-images.uno ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery-images.dos ul{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* ----------------------------------------------------------------------- */
+/* TABLET */
+@media screen and (max-width: 767px) and (min-width: 480px){
+    /* GALLERIES */
+    .gallery {
+        margin: 0;
+    }
+    .gallery-images.uno ul{
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery-images.dos ul{
+        grid-template-columns: 1fr;
+    }
+
+    .modal-container{
+        display: inline-block;
+        top: 5%;
+        left: 20%;
+        width: 80%;
+    }
+    .modal-container-img {
+        width: 100%;
+    }
+
+    .modal-container-txt {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    /* ABOUT ME */
+    .inanna-container{
+        margin: 0;
+    }
+
+    /* CONTACT */
+    .contact-container {
+        /* background-color: rgba(255,255,255,0.1); */
+        border: none;
+        height: 900px;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+
+    .pregunta {
+        margin-top: 40px;
+    }
+    #pregunta {
+        margin-top: 0px;
+    }
+
+    .nombre , .apellido , .email ,.input {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* ----------------------------------------------------------------------- */
+/* MOBILE */
+@media screen and (max-width: 479px){
+    /* GALLERIES */
+    .gallery {
+        margin: 0;
+    }
+    .gallery-images.uno ul{
+        grid-template-columns: 1fr;
+    }
+    .gallery-images.dos ul{
+        grid-template-columns: 1fr;
+    }
+
+    .modal-container{
+        display: inline-block;
+        top: 5%;
+        left: 10%;
+        width: 80%;
+    }
+    .modal-container-img {
+        width: 100%;
+    }
+
+    .modal-container-txt {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    
+    /* ABOUT-ME */
+    .inanna-container{
+        margin: 0;
+    }
+
+    /* FOOTER */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* HEADER AND INDEX */
+    .header {
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 40px;
+        /* border-bottom: 1px solid white; */
+    }
+    .header-left {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .header-right   {
+        width: 100%;
+        /* border: 1px solid white; */
+        }
+    
+    .header-right-container  {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+            }
+
+    .header-right a {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+    }
+
+    .hero h2  {
+        font-size: 35px;
+        text-align: center;
+    }
+    .hero p {
+        text-align: center;
+    }
+    .hero .buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        /* border: 1px solid white; */
+    }
+
+    .hero .buttons .button{
+        display: inline-block;
+        width: 100%;
+        padding: 5px;
+        text-align: center; 
+    }
+
+    /* CONTACT */
+    .contact-container {
+        /* background-color: rgba(255,255,255,0.1); */
+        border: none;
+        height: 900px;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+
+    .pregunta {
+        margin-top: 40px;
+    }
+    #pregunta {
+        margin-top: 0px;
+    }
+}
+/* ----------------------------------------------------------------------- */

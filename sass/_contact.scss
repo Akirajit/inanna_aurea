@@ -1,0 +1,81 @@
+/* CONTACT */
+
+.contact {
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    /* background-image: url('../img/contact.jpg');  */
+    background-size: cover; 
+    
+}
+
+.contact-container {
+    /* background-color: rgba(255,255,255,0.1); */
+    border: 2px solid white;
+    border-radius: 40px;
+    height: 900px;
+    padding: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contact-container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.input {
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom:2px solid white;
+    /* hace que al clickearlo no muestre el borde*/
+    outline: none;
+    color: white;
+    font-family: $mainFont;
+    font-size: 1.3rem;
+    margin-top: 40px;
+}
+
+#pregunta, #suscribirme, #comentarios{
+    margin-top: 40px;
+}
+
+#pregunta {
+    font-family:  $mainFont;
+    margin-left: 15px;
+    
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.button.submit:hover , .button.reset:hover {
+    border: 1px #fb95fb solid;
+}
+
+.button.submit {
+    margin-left: 30px;
+}
+
+.button.submit , .button.reset {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom:0;
+    /* hace que al clickearlo no muestre el borde*/
+    outline: none;
+    border: 1px solid white;
+}
+/* /CONTACT */

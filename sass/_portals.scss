@@ -1,0 +1,125 @@
+/* PORTALS */
+
+.gallery-description {
+    margin: 20px;
+}
+.gallery {
+    /* border: 1px solid white; */
+    margin:50px;
+    text-align: center;  
+}
+.portal-descripcion {
+    /* border: 1px solid white; */
+    margin:50px;
+    padding: 50px;
+}
+
+
+.gallery-images.uno ul {
+    display: grid;
+    /* grid-template-columns: 20% 20% 20% 20%; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* border: 2px violet solid; */
+}
+
+.gallery-images.dos ul {
+    display: grid;
+    /* grid-template-columns: 20% 20% 20% 20%; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: 2px violet solid; */
+}
+
+
+
+.gallery-images ul li {
+    border: 1px white solid;
+    margin: 10px;
+    display: grid;
+}
+
+.gallery-images li a img{
+    width: 100%;
+}
+
+.gallery-images li a:hover{
+    color: #ffd4ff;
+}
+
+.gallery-images li h3{
+    margin: 10px;
+}
+
+.modal {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+}
+
+#modal1:target, #modal2:target , #modal3:target,
+#modal4:target, #modal5:target , #modal6:target,
+#modal7:target, #modal8:target , #modal9:target,
+#modal10:target, #modal11:target , #modal12:target,
+#modal13:target, #modal14:target , #modal15:target,
+#modal16:target, #modal17:target , #modal18:target,
+#modal19:target, #modal20:target , #modal21:target,
+#modal22:target, #modal23:target , #modal24:target,
+#modal25:target, #modal26:target , #modal27:target,
+#modal28:target, #modal29:target , #modal30:target,
+#modal31:target, #modal32:target , #modal33:target
+{
+    display: block;
+}
+
+
+
+.modal-container{
+    background-color: $dark;;
+    position: relative;
+    border: 1px white solid;
+    top: 5%;
+    left: 20%;
+    width: 70%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+
+.modal-container-img  {
+    width: 45%;
+    
+    /* border: 1px white solid; */
+} 
+
+.modal-container-img img {
+    width: 100%;
+    
+} 
+
+.modal-container-txt{
+    width: 50%;
+    /* border: white 1px solid; */
+   
+}
+
+.modal-container-txt h2{
+    margin: 20px;
+    text-align: center;
+}
+.modal-container-txt p{
+    margin: 20px;
+    text-align: center;
+}
+
+.modal-container a{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
