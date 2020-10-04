@@ -79,7 +79,7 @@ label {
 }
 
 /* HEADER */
-.open, .close {
+.open, .cerrar {
   display: none;
 }
 
@@ -201,23 +201,23 @@ label {
 
 /* END OF HERO */
 /* ABOUT ME*/
-.inanna-container {
+.acercademi-container {
   border: 1px solid white;
   margin: 70px;
   padding: 20px;
   background-image: url("../img/mato.jpg");
 }
 
-.inanna-container p {
+.acercademi-container p {
   margin-bottom: 3rem;
 }
 
-.inanna-container div {
+.acercademi-container div {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.inanna-container div img {
+.acercademi-container div img {
   margin: 20px;
 }
 
@@ -496,7 +496,7 @@ footer a img:hover {
     font-size: 1.5rem;
   }
 
-  .hidden-nav .close {
+  .hidden-nav .cerrar {
     display: block;
     position: absolute;
     top: 20px;
@@ -568,7 +568,7 @@ footer a img:hover {
     font-size: 1.5rem;
   }
 
-  .hidden-nav .close {
+  .hidden-nav .cerrar {
     display: block;
     position: absolute;
     top: 20px;
@@ -632,7 +632,7 @@ footer a img:hover {
   }
 
   /* ABOUT ME */
-  .inanna-container {
+  .acercademi-container {
     margin: 0;
   }
 
@@ -706,7 +706,7 @@ footer a img:hover {
     font-size: 1.5rem;
   }
 
-  .hidden-nav .close {
+  .hidden-nav .cerrar {
     display: block;
     position: absolute;
     top: 20px;
@@ -795,11 +795,11 @@ footer a img:hover {
   }
 
   /* ABOUT-ME */
-  .inanna-container {
+  .acercademi-container {
     margin: 0;
   }
 
-  .inanna-container div img {
+  .acercademi-container div img {
     max-width: 80%;
   }
 
