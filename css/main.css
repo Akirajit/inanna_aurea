@@ -79,6 +79,14 @@ label {
 }
 
 /* HEADER */
+.open, .close {
+  display: none;
+}
+
+.hidden-nav {
+  display: none;
+}
+
 .header {
   /* background-color:#2c153c; */
   background-color: black;
@@ -92,6 +100,10 @@ label {
   top: 0;
   z-index: 1;
   /* border: solid white 1px; */
+}
+
+.header-left h1 {
+  margin-top: 0.8rem;
 }
 
 .header-left a {
@@ -109,18 +121,16 @@ label {
   font-size: 1.2rem;
 }
 
-.header-right a {
+.header-nav a {
   font-size: 1.2rem;
   transition: all 0.4s;
   display: inline-block;
 }
 
-.header-right a:hover {
+.header-nav a:hover, .hidden-nav a:hover {
   color: #b5f1be;
   border: 1px solid white;
   padding: 5px;
-  /* border-radius: 50px; */
-  /* padding: 10px; */
 }
 
 /*END OF HEADER */
@@ -381,7 +391,6 @@ footer a img:hover {
   /* background-color: rgba(255,255,255,0.1); */
   border: 2px solid white;
   border-radius: 40px;
-  height: 900px;
   padding: 50px;
   margin-bottom: 50px;
   display: flex;
@@ -420,6 +429,13 @@ footer a img:hover {
   margin-left: 15px;
 }
 
+#comentarios {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 20px;
+}
+
 .contact-buttons {
   display: flex;
   justify-content: center;
@@ -449,6 +465,66 @@ footer a img:hover {
 /* ----------------------------------------------------------------------- */
 /* DESKTOP */
 @media screen and (max-width: 1200px) and (min-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+
+  .hidden-nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 16;
+  }
+
+  .menues {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+
+  .hidden-nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hidden-nav-container li {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .hidden-nav .close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 4rem;
+    width: 30px;
+  }
+
+  #hidden-nav:target {
+    display: block;
+  }
+
+  .header .open {
+    display: block;
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    right: 4rem;
+  }
+
+  .header {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .header-left {
+    margin-left: 4rem;
+  }
+
   .gallery-images.uno ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -460,6 +536,71 @@ footer a img:hover {
 /* ----------------------------------------------------------------------- */
 /* TABLET */
 @media screen and (max-width: 767px) and (min-width: 480px) {
+  .header-nav {
+    display: none;
+  }
+
+  .hidden-nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 16;
+    transition: left 0.5s;
+  }
+
+  .menues {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+
+  .hidden-nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hidden-nav-container li {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .hidden-nav .close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 4rem;
+    width: 30px;
+  }
+
+  #hidden-nav:target {
+    display: block;
+  }
+
+  .subtitulo {
+    display: none;
+  }
+
+  .header .open {
+    display: block;
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    right: 4rem;
+  }
+
+  .header {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .header-left {
+    margin-left: 2rem;
+  }
+
   /* GALLERIES */
   .gallery {
     margin: 0;
@@ -499,7 +640,6 @@ footer a img:hover {
   .contact-container {
     /* background-color: rgba(255,255,255,0.1); */
     border: none;
-    height: 900px;
     padding: 0;
     display: flex;
     width: 100%;
@@ -514,7 +654,10 @@ footer a img:hover {
     margin-top: 0px;
   }
 
-  .nombre, .apellido, .email, .input {
+  .nombre,
+.apellido,
+.email,
+.input {
     width: 80%;
   }
 
@@ -526,17 +669,112 @@ footer a img:hover {
 /* ----------------------------------------------------------------------- */
 /* MOBILE */
 @media screen and (max-width: 479px) {
+  .header-nav {
+    display: none;
+  }
+
+  .header-left h1 {
+    font-size: 1.4rem;
+    text-align: right;
+    margin-right: 0.2rem;
+  }
+
+  .hidden-nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 16;
+  }
+
+  .menues {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+
+  .hidden-nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hidden-nav-container li {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .hidden-nav .close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 1rem;
+    width: 30px;
+  }
+
+  #hidden-nav:target {
+    display: block;
+  }
+
+  .subtitulo {
+    display: none;
+  }
+
+  .header .open {
+    display: block;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    left: 1rem;
+  }
+
+  .header {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.3rem;
+  }
+
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .hero p {
+    text-align: center;
+  }
+
+  .hero .buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 0.7rem;
+  }
+
+  .hero .buttons .button {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+  }
+
   /* GALLERIES */
   .gallery {
     margin: 0;
   }
 
   .gallery-images.uno ul {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .gallery-images.dos ul {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .modal-container {
@@ -561,6 +799,10 @@ footer a img:hover {
     margin: 0;
   }
 
+  .inanna-container div img {
+    max-width: 80%;
+  }
+
   /* FOOTER */
   footer {
     flex-direction: column;
@@ -568,64 +810,10 @@ footer a img:hover {
   }
 
   /* HEADER AND INDEX */
-  .header {
-    flex-direction: column;
-    margin: 0;
-    margin-bottom: 40px;
-    /* border-bottom: 1px solid white; */
-  }
-
-  .header-left {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-  }
-
-  .header-right {
-    width: 100%;
-    /* border: 1px solid white; */
-  }
-
-  .header-right-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-  }
-
-  .header-right a {
-    font-size: 1.1rem;
-    margin-bottom: 12px;
-  }
-
-  .hero h2 {
-    font-size: 35px;
-    text-align: center;
-  }
-
-  .hero p {
-    text-align: center;
-  }
-
-  .hero .buttons {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    /* border: 1px solid white; */
-  }
-
-  .hero .buttons .button {
-    display: inline-block;
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-  }
-
   /* CONTACT */
   .contact-container {
     /* background-color: rgba(255,255,255,0.1); */
     border: none;
-    height: 900px;
     padding: 0;
     display: flex;
     width: 100%;
@@ -636,8 +824,19 @@ footer a img:hover {
     margin-top: 40px;
   }
 
+  .nombre,
+.apellido,
+.email,
+.input {
+    width: 90%;
+  }
+
   #pregunta {
     margin-top: 0px;
+  }
+
+  #comentarios {
+    width: 90%;
   }
 }
 /* ----------------------------------------------------------------------- */

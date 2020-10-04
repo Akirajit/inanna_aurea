@@ -29,18 +29,43 @@
   <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <div class="hidden-nav"  id="hidden-nav">
+      <a href="#" ><img src="img/close.png" alt="close" class="close"></a>
+      <nav class="menues">
+        <ul class="hidden-nav-container" >
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="inanna.html">Inanna</a>
+          </li>
+          <li>
+            <a href="portal1.html">Portal Lunar</a>
+          </li>
+          <li>
+            <a href="portal2.html">Portal Epsylon</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <!-- HEADER -->
     <!-- Left -->
     <header class="header">
+      <a href="#hidden-nav" ><img src="img/open.png" alt="menu" class="open"></a>
       <div class="header-left">
-        <h1><a href="index.html">INANNA_AUREA</a></h1>
+        <h1><a href="index.html" id="logo">INANNA_AUREA</a></h1>
         <p class="subtitulo">Galería de arte online, una experiencia 2020 🧙</p>
       </div>
 
+      
       <!-- Right -->
-      <div class="header-right">
+      <div class="header-nav"  id="nav">
+        <a href="#" ><img src="img/close.png" alt="close" class="close"></a>
         <nav>
-          <ul class="header-right-container">
+          <ul class="header-nav-container" >
             <li>
               <a href="inanna.html">Inanna</a>
             </li>
@@ -96,9 +121,9 @@
             <textarea
               name="comentarios"
               id="comentarios"
-              cols="60"
-              rows="10"
-              placeholder="Escribe aquí tu pregunta o comentario"
+              cols="40"
+              rows="7"
+              placeholder="Comentarios"
             ></textarea>
           </div>
     
