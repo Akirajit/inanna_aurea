@@ -42,7 +42,7 @@ h3{
 p {  
     color:$whiteText;
     line-height: 1.5;
-    font-size:1rem;
+    font-size:1.2rem;
 }
 
 nav {
@@ -60,3 +60,25 @@ nav ul li {
 label {
     color:white;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 25px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0px 1px 13px 0px white;
+    border-radius: 1px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#77b77773;
+    border-radius: 100%;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #60946073; 
+  }

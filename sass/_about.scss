@@ -1,22 +1,37 @@
-/* ABOUT ME*/
+
 .acercademi-container{
-    
     border: 1px solid white;
     margin: 70px;
     padding: 20px;
     background-image: url('../img/mato.jpg');  
 }
-.acercademi-container p{
-    margin-bottom: 3rem; 
+
+.acercademi-container h2{
+margin-bottom: 50px;
 }
 
-.acercademi-container div {
-    text-align: center;
-    margin-bottom: 3rem;  
+
+
+#img18, #img01 {
+   width: 400px;
+   float: left;
+   margin-right: 1.5rem;
+   margin-bottom: 10px;
 }
 
-.acercademi-container div img {
-    margin: 20px;  
-}
+ #img27 ,  #img26{
+    width: 400px;
+    float: right;
+    margin-left: 1.5rem;
+    margin-bottom: 10px;
+ }
+
+
+ #inanna-section1 , #inanna-section2,  #inanna-section3,  #inanna-section4 {
+     margin-bottom: 200px;
+ }
+
+
+
 
 /* /ABOUT ME*/

@@ -61,7 +61,7 @@ h3 {
 p {
   color: #D4D4D4;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 nav {
@@ -76,6 +76,28 @@ nav ul li {
 
 label {
   color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 25px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0px 1px 13px 0px white;
+  border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #77b77773;
+  border-radius: 100%;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #60946073;
 }
 
 /* HEADER */
@@ -200,7 +222,6 @@ label {
 }
 
 /* END OF HERO */
-/* ABOUT ME*/
 .acercademi-container {
   border: 1px solid white;
   margin: 70px;
@@ -208,17 +229,26 @@ label {
   background-image: url("../img/mato.jpg");
 }
 
-.acercademi-container p {
-  margin-bottom: 3rem;
+.acercademi-container h2 {
+  margin-bottom: 50px;
 }
 
-.acercademi-container div {
-  text-align: center;
-  margin-bottom: 3rem;
+#img18, #img01 {
+  width: 400px;
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.acercademi-container div img {
-  margin: 20px;
+#img27, #img26 {
+  width: 400px;
+  float: right;
+  margin-left: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#inanna-section1, #inanna-section2, #inanna-section3, #inanna-section4 {
+  margin-bottom: 200px;
 }
 
 /* /ABOUT ME*/
@@ -264,7 +294,8 @@ label {
 }
 
 .gallery-images li a:hover {
-  color: #ffd4ff;
+  opacity: 0.5;
+  color: white;
 }
 
 .gallery-images li h3 {
@@ -338,6 +369,10 @@ label {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.modal-container a:hover {
+  color: #b5f1be;
 }
 
 /* FOOTER */
@@ -636,6 +671,16 @@ footer a img:hover {
     margin: 0;
   }
 
+  #img18, #img27, #img01, #img26 {
+    float: initial;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  #inanna-section1, #inanna-section2, #inanna-section3, #inanna-section4 {
+    margin-bottom: 50px;
+  }
+
   /* CONTACT */
   .contact-container {
     /* background-color: rgba(255,255,255,0.1); */
@@ -797,6 +842,16 @@ footer a img:hover {
   /* ABOUT-ME */
   .acercademi-container {
     margin: 0;
+  }
+
+  #img18, #img27, #img01, #img26 {
+    float: initial;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  #inanna-section1, #inanna-section2, #inanna-section3, #inanna-section4 {
+    margin-bottom: 100px;
   }
 
   .acercademi-container div img {
