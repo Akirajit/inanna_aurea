@@ -20,26 +20,44 @@
      margin: 1.5rem 0;
  }
  
+ #continuar {
+    color:$green;
+    margin-left: 1rem;
+    
+} 
+ #continuar:hover {
+    opacity: 0.8;
+}
+ 
  .hero-right a {
      color:white;
  }
  
- @keyframes efecto{
-     0%{ opacity: 0.7;}
-     25%{ opacity: 0.5; transform: scale(1.5);}
-     50%{ opacity: 0.3;}
-     75%{ opacity: 0.5; transform: scale(1);}
-     100%{ opacity: 0.7;}
- } 
+//  @keyframes efecto{
+//      0%{ opacity: 0.7;}
+//      25%{ opacity: 0.5; transform: scale(1.5);}
+//      50%{ opacity: 0.3;}
+//      75%{ opacity: 0.5; transform: scale(1);}
+//      100%{ opacity: 0.7;}
+//  } 
  
- .hero-right h5:hover {
-     animation-name: efecto;
-     animation-iteration-count: infinite;
-     animation-timing-function: ease-in;
-     animation-duration: 2s;
-     animation-delay: 0s;   
- }
- 
+//  .hero-right h5:hover {
+//      animation-name: efecto;
+//      animation-iteration-count: infinite;
+//      animation-timing-function: ease-in;
+//      animation-duration: 2s;
+//      animation-delay: 0s;   
+//  }
+
+.hero-right h5 {
+    transition: all 0.5s;
+    font-size: 2rem;
+  }
+
+.hero-right h5:hover {
+  transform: scale(1.2); 
+}
+
  .buttons {
      margin-bottom: 20px;
  }
@@ -47,4 +65,12 @@
  .carousel {
      margin-bottom: 40px;
  }
+
+ .index-text{
+    border: 1px solid white;
+    margin: 70px;
+    padding: 40px;
+    scroll-margin-top: 8rem;
+   
+}
  /* END OF HERO */

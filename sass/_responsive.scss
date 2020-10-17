@@ -148,7 +148,7 @@
   }
 
   /* ABOUT ME */
-  .acercademi-container {
+  .inanna-container {
     margin: 0;
   }
  
@@ -209,12 +209,12 @@
     width: 100%;
     height: 100vh;
     background-color: black;
-    z-index: 16;
+    z-index: 17;
   }
   .menues {
     display: flex;
     flex-direction: column;
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
   .hidden-nav-container {
     display: flex;
@@ -258,7 +258,6 @@
     padding-top: 0;
   }
   .hero h2 {
-    font-size: 35px;
     text-align: center;
   }
   .hero p {
@@ -269,7 +268,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .hero .buttons .button {
     display: inline-block;
@@ -277,6 +276,13 @@
     padding: 5px;
     text-align: center;
   }
+
+  .index-text{
+    margin: 10px;
+    padding: 10px;
+    background-image: none;
+    background-color: rgba(49, 49, 49, 0.164);
+}
   /* GALLERIES */
   .gallery {
     margin: 0;
@@ -305,7 +311,7 @@
   }
 
   /* ABOUT-ME */
-  .acercademi-container {
+  .inanna-container {
     margin: 0;
   }
   #img18, #img27 , #img01, #img26 {
@@ -316,7 +322,7 @@
 #inanna-section1 , #inanna-section2,  #inanna-section3,  #inanna-section4 {
   margin-bottom: 100px;
 }
-   .acercademi-container div img{
+   .inanna-container div img{
     max-width: 80%;
   }
 
